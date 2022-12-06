@@ -17,6 +17,14 @@ pipeline {
                BuildApp()               
            }
            }
+        
+        stage('Sonar Analysis') {
+           tools {
+                   jdk "java"
+             }
+           steps {
+               SonarApp(sonarlogin)               
+           }
         stage('Store war to Nexus') {
            tools {
                    jdk "java"
@@ -24,13 +32,6 @@ pipeline {
            steps {
                StoreToNexus()               
            }
-           }
-        stage('Sonar Analysis') {
-           tools {
-                   jdk "java"
-                }
-           steps {
-               SonarApp(sonarlogin)               
            }
         }
     }

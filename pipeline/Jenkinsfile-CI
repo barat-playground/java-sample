@@ -6,7 +6,6 @@ pipeline {
        sonarlogin = credentials('sonar_token')
        }
     
-    
     stages {
       
        stage('Maven Build') {

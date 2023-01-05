@@ -1,4 +1,11 @@
 @Library('shared-library') _
+def secrets = [
+  [path: 'secret/nexus', engineVersion: 2, secretValues: [
+    [envVar: 'USERNAME', vaultKey: 'username'],
+    [envVar: 'PASSWORD', vaultKey: 'password']
+    ]]
+]
+def configuration = [vaultUrl: 'http://localhost:8200',  vaultCredentialId: 'hexa-poc-creds', engineVersion: 2]
 pipeline {
     agent any
     

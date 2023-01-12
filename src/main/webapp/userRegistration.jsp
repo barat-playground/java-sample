@@ -13,7 +13,7 @@
 	
 	    
     ct.executeUpdate("create table if not exists USER(first_name varchar(255), last_name varchar(255), email varchar(255), username varchar(255), password varchar(255), domain varchar(255), regdate varchar(255), primary key (username))");
-	int i = st.executeUpdate("insert into USER(first_name, last_name, email, username, password, domain, regdate) values ('" + firstName + "','" + lastName + "','" + email + "','" + userName + "','" + password + "' + '" + domain + "', CURDATE())");
+	int i = st.executeUpdate("insert into USER(first_name, last_name, email, username, password, domain, regdate) values ('" + firstName + "','" + lastName + "','" + email + "','" + userName + "','" + password + "','" + domain + "', CURDATE())");
 	if (i > 0) { 
 				response.sendRedirect("welcome.jsp"); 
 			} 

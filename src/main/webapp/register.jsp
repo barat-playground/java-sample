@@ -13,6 +13,7 @@
 		<tr> <td>Email</td> <td><input type="text" name="email" value="" /></td> </tr> 
 		<tr> <td>User Name</td> <td><input type="text" name="userName" value="" /></td> </tr> 
 		<tr> <td>Password</td> <td><input type="password" name="password" value="" /></td> </tr> 
+		<tr> <td>Domain</td> <td><input type="domain" name="domain" value="" /></td> </tr>
 		<tr> <td><input type="submit" value="Submit" /></td> <td><input type="reset" value="Reset" /></td> </tr>
 		<tr> <td colspan="2">Already registered!! <a href="index.jsp">Login Here</a></td> </tr>
 		</tbody> 

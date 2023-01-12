@@ -7,7 +7,7 @@
 	String email = request.getParameter("email");
 	String domain = request.getParameter("domain"); 
 	Class.forName ( "com.mysql.jdbc.Driver"); 
-	Connection con = DriverManager.getConnection("jdbc:mysql://loacalhost:3306/tendsterusers?useSSL=false&requireSSL=false&useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC", "arti@artimysqljava", "A@Rt1CoR3!");
+	Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/tendsterusers?useSSL=false&requireSSL=false&useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC", "root", "1234");
 	Statement st = con.createStatement();
     Statement ct = con.createStatement();
 	
